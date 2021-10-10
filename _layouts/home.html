@@ -82,14 +82,13 @@
 									<p>Materi yang diajarkan meliputi:</p>
 
 									<ol>
-										<li>Class and Objek</li>
-										<li>Method</li>
-										<li>Constructor</li>
-										<li>Encapsulation</li>
-										<li>Inheritance</li>
-										<li>Abstract class and Interface</li>
-										<li>Polymorphism</li>
-										</li>
+										{% for post in site.posts reversed %}
+											{% if post.path contains 'pbo' %}
+												<li>
+													<a href="{{ post.url }}">{{ post.title }}</a>
+												</li>
+											{% endif %}
+										{% endfor %}
 									</ol>
 
 									Reference:

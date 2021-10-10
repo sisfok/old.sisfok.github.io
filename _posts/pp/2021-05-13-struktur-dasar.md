@@ -17,17 +17,6 @@ perlu tahu fakta ini<sup>[1]</sup>). Kode Java selalu ditulis didalam sebuah
 class dan objek.
 
 
-```rust
-fn f(w: u32) -> u32 {
-    inline_me(w, 2)
-}
-
-fn inline_me(x: u32, y: u32) -> u32 {
-    x * y
-}
-```
-
-
 [1]: https://jekjektuanakal.my.id/post/peta-jalan-pejuang-cpp-2/
 
 ## Struktur program
