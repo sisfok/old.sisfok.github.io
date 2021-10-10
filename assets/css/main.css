@@ -1,0 +1,76 @@
+img, object, svg, video {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+p {
+    hyphens: auto;
+}
+
+h1, h2, h3 {
+    text-rendering: optimizeLegibility;
+    line-height: 1em
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+h2, h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+hr {
+    border: solid #dddddf;
+    border-width: 1px 0 0;
+    height: 0;
+}
+
+code,
+pre {
+    font-family: "JetBrains Mono", monospace;
+}
+
+a {
+    text-decoration-color: #2156a5;
+    color:black;
+}
+
+a.bare {
+    word-break: break-all;
+}
+
+a:hover, a:focus {
+    color: #2156a5;
+}
+
+.quoteblock {
+    padding-left: 1em;
+    border-left: 3px solid #ba3925;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.accordion-flush .accordion-button {
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.accordion-flush .accordion-item .accordion-collapse.collapse {
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 0;
+}

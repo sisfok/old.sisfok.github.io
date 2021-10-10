@@ -1,0 +1,115 @@
+{%- include header.html -%}
+
+<body>
+	<main>
+		<div class="container">
+			<h1 class="title display-2 fw-bolder">Hi &#128075;</h1>
+			<p>
+				Tulisan ini berbasis "Google Sana, Google Sini, Coba Itu, Coba
+				Ini, Lalu Tanya-tanyi" (GSGSCICILTT). Entah ini PLAGIAT, entah
+				ini RISET, yang jelas tidak pernah ada klaim bahwa ini merupakan
+				karya asli, serta belum tentu pula merupakan solusi terbaik,
+				serta bukan untuk konsumsi Scopus :). Mohon kiranya memberikan
+				tanggapan, terutama jika memiliki solusi alternatif. Semoga
+				catatan ini akan bermanfaat di masa mendatang, saat sudah lupa
+				cara menyelesaikan masalah trivia ini.
+			</p>
+
+			<section class="section py-4">
+					<div class="accordion accordion-flush" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button
+									class="accordion-button collapsed"
+									type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne"
+									aria-expanded="false"
+									aria-controls="collapseOne"
+								>
+									Pengantar Pemrograman
+								</button>
+							</h2>
+							<div
+								id="collapseOne"
+								class="accordion-collapse collapse"
+								aria-labelledby="headingOne"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									<p>
+										Pengantar Pemrograman adalah mata kuliah di tahun pertama
+										semester pertama. Mata kuliah ini membahas mengenai dasar-dasar
+										pemrograman. Bahasa pemrograman yang digunakan dalam kuliah ini
+										adalah bahasa Java.
+									</p>
+
+									<p>Materi yang diajarkan meliputi:</p>
+
+									<ol>
+										{% for post in site.posts reversed %}
+											{% if post.path contains 'pp' %}
+												<li>
+													<a href="{{ post.url }}">{{ post.title }}</a>
+												</li>
+											{% endif %}
+										{% endfor %}
+									</ol>
+
+									Reference:
+
+									Java: The Complete Reference Eleventh Edition
+									Modul Pengantar Pemrograman, Lab RPL, Prodi Ilmu Komputer/Sistem Informasi Universitas
+									Hasanuddin
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Pemrograman Berorientasi Objek
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p>
+										PBO atau Pemrograman Berorientasi Objek adalah matakuliah
+										tahun pertama semester kedua yang mengajarkan materi tentang
+										lanjutan dari materi Pengantar Pemrograman.
+									</p>
+
+									<p>Materi yang diajarkan meliputi:</p>
+
+									<ol>
+										<li>Class and Objek</li>
+										<li>Method</li>
+										<li>Constructor</li>
+										<li>Encapsulation</li>
+										<li>Inheritance</li>
+										<li>Abstract class and Interface</li>
+										<li>Polymorphism</li>
+										</li>
+									</ol>
+
+									Reference:
+
+									Java: The Complete Reference Eleventh Edition
+									Modul Pengantar Pemrograman, Lab RPL, Prodi Ilmu Komputer/Sistem Informasi Universitas
+									Hasanuddin
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	{%- include footer.html -%}
+
+</body>
+
+</html>

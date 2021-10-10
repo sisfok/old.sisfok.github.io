@@ -1,0 +1,27 @@
+title: sisfok
+email: deo@mail.com
+description: >
+  Menjadi manusia.
+baseurl: ""
+url: "https://sisfok.github.io/"
+github_username:  deovaliandro
+
+plugins:
+  - jekyll-feed
+
+destination: ./public
+incremental: false
+highlighter: rouge
+
+gist:
+  noscript: false
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    icons : font
+    rouge-style : github
+  
