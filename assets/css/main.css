@@ -1,3 +1,8 @@
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 img, object, svg, video {
     display: inline-block;
     vertical-align: middle;
@@ -73,4 +78,8 @@ a:hover, a:focus {
     border: 1px solid black;
     border-top: none;
     border-radius: 0;
+}
+
+.tooltip-inner {
+    max-width: 1000px !important;
 }
