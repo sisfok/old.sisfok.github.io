@@ -11,7 +11,7 @@ plugins:
 
 destination: ./public
 incremental: false
-highlighter: rouge
+highlighter: none
 
 gist:
   noscript: false
@@ -20,7 +20,8 @@ markdown: kramdown
 kramdown:
   input: GFM
   math_engine: mathjax
-  syntax_highlighter: rouge
+  syntax_highlighter:
+    disable : true
   syntax_highlighter_opts:
     icons : font
     rouge-style : github
