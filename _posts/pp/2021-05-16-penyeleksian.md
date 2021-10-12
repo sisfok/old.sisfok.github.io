@@ -93,7 +93,7 @@ Switch memerlukan `break` untuk menghentikan pengujian ketika pengujian itu
 sudah memenuhi persyaratan yang diberikan.
 
 `break` digunakan untuk menghentikan pencarian jika kondisi yang dicari sudah
-memenuhi (Baca bagian [Jump Statement](/jump-statement.md)).
+memenuhi (Baca bagian [Jump Statement](/2021/05/18/jump-statement.html)).
 
 Contoh penggunaan:
 

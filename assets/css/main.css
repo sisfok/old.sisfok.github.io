@@ -3,6 +3,19 @@
     color: white;
 }
 
+body {
+    font-family: -apple-system,Helvetica Neue,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
 img, object, svg, video {
     display: inline-block;
     vertical-align: middle;
