@@ -95,4 +95,9 @@ a:hover, a:focus {
 
 .tooltip-inner {
     max-width: 1000px !important;
+    border-radius: 0%;
+}
+
+.tooltip .tooltip-arrow {
+    display: none;
 }
