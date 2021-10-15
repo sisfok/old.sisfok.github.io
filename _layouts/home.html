@@ -44,9 +44,7 @@
 
                   <p>Materi yang diajarkan meliputi:</p>
 
-                  <ol>
-                    {% for post in site.posts reversed %}
-                      {% if post.path contains 'pp' %}
+                  <ol>{% for post in site.posts reversed %}{% if post.path contains 'pp' %}
                         <li>
                           <a
                             href="{{ post.url }}"
@@ -55,9 +53,7 @@
                             data-bs-delay-show= 0
                             data-bs-animation="false"
                             title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                        </li>
-                      {% endif %}
-                    {% endfor %}
+                        </li> {% endif %} {% endfor %}
                   </ol>
 
                   Reference:
@@ -100,9 +96,7 @@
 
                   <p>Materi yang diajarkan meliputi:</p>
 
-                  <ol>
-                    {% for post in site.posts reversed %}
-                      {% if post.path contains 'pbo' %}
+                  <ol>{% for post in site.posts reversed %}{% if post.path contains 'pbo' %}
                         <li>
                           <a
                             href="{{ post.url }}"
@@ -111,9 +105,7 @@
                             data-bs-delay-show= 0
                             data-bs-animation="false"
                             title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                        </li>
-                      {% endif %}
-                    {% endfor %}
+                        </li> {% endif %} {% endfor %}
                   </ol>
 
                   Reference:
@@ -127,10 +119,7 @@
               </div>
             </div>
           </div>
-
-        </div>
       </section>
-
     </div>
   </main>
 
