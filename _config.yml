@@ -11,7 +11,7 @@ plugins:
 
 destination: ./public
 incremental: false
-highlighter: none
+highlighter: rogue
 
 gist:
   noscript: false
