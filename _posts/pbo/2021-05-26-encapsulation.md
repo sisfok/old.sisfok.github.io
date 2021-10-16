@@ -1,7 +1,7 @@
 ---
 title       : Encapsulation
 author      : Deo Valiandro. M
-date        : '2021-05-15'
+date        : '2021-05-26'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
 layout      : default
 ---

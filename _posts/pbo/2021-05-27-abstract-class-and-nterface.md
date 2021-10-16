@@ -1,7 +1,7 @@
 ---
 title       : Abstract Class dan Interface
 author      : Deo Valiandro. M
-date        : '2021-05-16'
+date        : '2021-05-27'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
 layout      : default
 ---

@@ -1,7 +1,7 @@
 ---
 title       : Class dan Object
 author      : Deo Valiandro. M
-date        : '2021-05-13'
+date        : '2021-05-23'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
 layout      : default
 ---

@@ -8,6 +8,7 @@ github_username:  deovaliandro
 
 plugins:
   - jekyll-feed
+  - jekyll-asciidoc
 
 destination: ./public
 incremental: false
