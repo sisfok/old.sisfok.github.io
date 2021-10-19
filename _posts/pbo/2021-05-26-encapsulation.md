@@ -43,6 +43,7 @@ subclassnya selama berada dalam package yang sama.
 
 Tabel jangkauan untuk tiap modifier:
 
+{:.table}
 |Modifier|Class|Package|Subclass|World|
 |---|---|---|---|---|
 |public|Y|Y|Y|Y|

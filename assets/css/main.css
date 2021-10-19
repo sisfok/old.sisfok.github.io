@@ -1,22 +1,48 @@
-.dark-mode {
-    background-color: black;
-    color: white;
+body,
+.accordion-body,
+button,
+footer>p,
+table {
+    background: #282828 !important;
+    color: #ebdbb2 !important;
+    font-family: -apple-system, Helvetica Neue, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, sans-serif;
+    line-height: 1.6;
 }
 
-body {
-    font-family: -apple-system,Helvetica Neue,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,sans-serif;
-    line-height: 1.6;
+.accordion-button,
+.accordion-body {
+    border: 1px solid #ebdbb2 !important;
+}
+
+a,
+a:active,
+a:visited {
+    color: #ebdbb2;
+    text-decoration-color: #ebdbb2;
+}
+
+a.bare {
+    word-break: break-all;
+}
+
+a:hover,
+a:focus {
+    color: #d79921;
 }
 
 h1 {
     font-weight: bolder;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-weight: bold;
 }
 
-img, object, svg, video {
+img,
+object,
+svg,
+video {
     display: inline-block;
     vertical-align: middle;
     max-width: 100%;
@@ -32,7 +58,9 @@ p {
     hyphens: auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-rendering: optimizeLegibility;
     line-height: 1em
 }
@@ -43,7 +71,8 @@ h1 {
     margin-bottom: .5em;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: .5rem;
@@ -58,19 +87,15 @@ hr {
 code,
 pre {
     font-family: "JetBrains Mono", monospace;
+    padding: 5px;
 }
 
-a {
-    text-decoration-color: #2156a5;
-    color:black;
+div.highlight {
+    border: 3px dashed #cc241d;
 }
 
-a.bare {
-    word-break: break-all;
-}
-
-a:hover, a:focus {
-    color: #2156a5;
+code {
+    color: #d79921;
 }
 
 .quoteblock {

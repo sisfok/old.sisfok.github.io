@@ -11,19 +11,6 @@ plugins:
   - jekyll-asciidoc
 
 destination: ./public
-incremental: false
-highlighter: rogue
-
-gist:
-  noscript: false
-
 markdown: kramdown
-kramdown:
-  input: GFM
-  math_engine: mathjax
-  syntax_highlighter:
-    disable : true
-  syntax_highlighter_opts:
-    icons : font
-    rouge-style : github
+highlighter: rouge
   
