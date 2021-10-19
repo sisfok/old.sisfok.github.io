@@ -13,4 +13,3 @@ plugins:
 destination: ./public
 markdown: kramdown
 highlighter: rouge
-  
