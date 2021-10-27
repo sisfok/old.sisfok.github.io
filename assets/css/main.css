@@ -84,17 +84,8 @@ hr {
     height: 0;
 }
 
-code,
-pre {
-    font-family: "JetBrains Mono", monospace;
-    padding: 5px;
-}
-
-div.highlight {
-    border: 3px dashed #cc241d;
-}
-
 code {
+    font-family: "JetBrains Mono", monospace;
     color: #d79921;
 }
 
