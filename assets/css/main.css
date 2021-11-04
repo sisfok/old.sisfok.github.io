@@ -111,9 +111,13 @@ code {
 }
 
 .accordion-flush .accordion-item .accordion-collapse.collapse {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     border-top: none;
     border-radius: 0;
+}
+
+.accordion-button {
+    border-bottom: none;
 }
 
 .tooltip-inner {
