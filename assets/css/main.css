@@ -1,17 +1,15 @@
-body,
-.accordion-body,
-button,
-footer>p,
-table {
-    background: #282828 !important;
-    color: #ebdbb2 !important;
-    font-family: -apple-system, Helvetica Neue, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, sans-serif;
-    line-height: 1.6;
+html {
+    max-width: 720px;
+    margin: auto;
+    background: #333333;
+    color: #EAC67A;
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 1.5em;
 }
 
-.accordion-button,
-.accordion-body {
-    border: 1px solid #ebdbb2 !important;
+p {
+    hyphens: auto;
 }
 
 a,
@@ -30,101 +28,26 @@ a:focus {
     color: #d79921;
 }
 
-h1 {
-    font-weight: bolder;
+summary {
+    font-weight: 700;
 }
 
-h2,
-h3 {
-    font-weight: bold;
+footer {
+    text-align: center;
 }
 
-img,
-object,
-svg,
-video {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 100%;
-    height: auto;
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-html {
-    font-size: 22px;
-    line-height: 1.5em;
-}
-
-p {
-    hyphens: auto;
-}
-
-h1,
-h2,
-h3 {
-    text-rendering: optimizeLegibility;
-    line-height: 1em
-}
-
-h1 {
-    font-size: 1.5em;
-    margin-top: 1em;
-    margin-bottom: .5em;
-}
-
-h2,
-h3 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: .5rem;
+pre.highlight {
+    padding: 20px;
 }
 
 hr {
-    border: solid #dddddf;
-    border-width: 1px 0 0;
-    height: 0;
-}
-
-div.highlight {
-    border: 3px dashed #cc241d;
-    padding-top: 20px;
-    padding-left: 2%;
-    margin-bottom: 1em;
-}
-
-code {
-    font-family: "JetBrains Mono", monospace;
-    color: #d79921;
-}
-
-.quoteblock {
-    padding-left: 1em;
-    border-left: 3px solid #ba3925;
-}
-
-.container {
-    max-width: 960px;
-}
-
-.accordion-flush .accordion-button {
-    border: 1px solid black;
-    border-radius: 0;
-}
-
-.accordion-flush .accordion-item .accordion-collapse.collapse {
-    /*border: 1px solid black;*/
-    border-top: none;
-    border-radius: 0;
-}
-
-.accordion-button {
-    border-bottom: none;
-}
-
-.tooltip-inner {
-    max-width: 1000px !important;
-    border-radius: 0%;
-}
-
-.tooltip .tooltip-arrow {
-    display: none;
+    border: 0.1px solid #EAC67A;
 }
