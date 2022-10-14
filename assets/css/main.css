@@ -66,3 +66,7 @@ blockquote {
     padding: 1rem;
     margin-left: 0;
 }
+
+#canary {
+    width: 100%;
+}
