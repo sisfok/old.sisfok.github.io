@@ -60,3 +60,9 @@ code {
 .text-center {
     text-align: center;
 }
+
+blockquote {
+    border-left: 1rem solid #b8bb26;
+    padding: 1rem;
+    margin-left: 0;
+}
