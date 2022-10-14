@@ -1,4 +1,4 @@
-html {
+body {
     max-width: 720px;
     margin: auto;
     background: #333333;
@@ -55,4 +55,8 @@ hr {
 code {
     font-size: .9rem;
     line-height: 0;
+}
+
+.text-center {
+    text-align: center;
 }

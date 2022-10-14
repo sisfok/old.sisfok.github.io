@@ -3,22 +3,14 @@
 <body>
   <a href="/">home</a>
   <a href="/about.html">about</a>
-  <pre>
--------------------------------------------------------------------------
-            ░██████╗██╗░██████╗███████╗░█████╗░██╗░░██╗
-            ██╔════╝██║██╔════╝██╔════╝██╔══██╗██║░██╔╝
-            ╚█████╗░██║╚█████╗░█████╗░░██║░░██║█████═╝░
-            ░╚═══██╗██║░╚═══██╗██╔══╝░░██║░░██║██╔═██╗░
-            ██████╔╝██║██████╔╝██║░░░░░╚█████╔╝██║░╚██╗
-            ╚═════╝░╚═╝╚═════╝░╚═╝░░░░░░╚════╝░╚═╝░░╚═╝
--------------------------------------------------------------------------
-</pre>
+  <h1 class="text-center">≧◉ᴥ◉≦ Hellllooooo</h1>
+
   <p>
-    Tulisan ini berbasis "<b>Google Sana, Google Sini, Coba Itu, Coba Ini</b>" (GSGSCICI).
-    Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah ada klaim bahwa ini
-    merupakan karya asli, serta belum tentu pula merupakan solusi terbaik.
-    Mohon kiranya memberikan tanggapan, terutama jika memiliki solusi
-    alternatif. Semoga catatan ini akan bermanfaat di masa mendatang.
+    Tulisan ini berbasis "<b>Google Sana, Google Sini, Coba Itu, Coba Ini</b>"
+    (GSGSCICI). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah ada
+    klaim bahwa ini merupakan karya asli, serta belum tentu pula merupakan
+    solusi terbaik. Mohon kiranya memberikan tanggapan, terutama jika memiliki
+    solusi alternatif. Semoga catatan ini akan bermanfaat di masa mendatang.
   </p>
 
   <details>
@@ -29,9 +21,7 @@
       pemrograman. Bahasa pemrograman yang digunakan dalam kuliah ini
       adalah bahasa Java.
     </p>
-
     <p>Materi yang diajarkan meliputi:</p>
-
     <ol>{% for post in site.posts reversed %}{% if post.path contains 'pp' %}
       <li>
         <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
@@ -40,7 +30,6 @@
     </ol>
 
     Reference:
-
     <ol>
       <li>Java: The Complete Reference Eleventh Edition</li>
       <li>
@@ -57,9 +46,7 @@
       tahun pertama semester kedua yang mengajarkan materi tentang
       lanjutan dari materi Pengantar Pemrograman.
     </p>
-
     <p>Materi yang diajarkan meliputi:</p>
-
     <ol>{% for post in site.posts reversed %}{% if post.path contains 'pbo' %}
       <li>
         <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
@@ -68,16 +55,13 @@
     </ol>
 
     Reference:
-
     <ol>
       <li>Java: The Complete Reference Eleventh Edition</li>
       <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
         Komputer/Sistem Informasi Universitas Hasanuddin</li>
     </ol>
   </details>
-
   {%- include footer.html -%}
-
 </body>
 
 </html>
