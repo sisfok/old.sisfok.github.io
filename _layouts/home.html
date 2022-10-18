@@ -1,7 +1,7 @@
 {%- include header.html -%}
 
 <body>
-  <a href="/">home</a>
+  <a href="/">home</a>&nbsp;&nbsp;&nbsp;
   <a href="/about.html">about</a>
   <h1 class="text-center">≧◉ᴥ◉≦ Hellllooooo</h1>
   <img src="https://www.privacytools.io/img/warrant-canary.svg" alt="" srcset="" id="canary">
@@ -65,6 +65,17 @@
   <details>
     <summary>Pengantar Pemrograman dengan Python</summary>
     <p>Coming soon.!</p>
+  </details>
+
+  <details>
+    <summary>Catatan Assembly</summary>
+    <p>Catatan belajar pemrograman level bawah dengan menggunakan Linux-x86_64</p>
+    <ol>{% for post in site.posts reversed %}{% if post.path contains 'assembly' %}
+      <li>
+        <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
+          data-bs-animation="false" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      </li> {% endif %} {% endfor %}
+    </ol>
   </details>
   {%- include footer.html -%}
 </body>
