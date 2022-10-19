@@ -9,7 +9,7 @@ body {
 
 nav {
   font-size: larger;
-  margin: 1rem 1rem 1rem 0;
+  padding-top: 2rem;
   max-width: 720px;
   margin: auto;
 }
@@ -98,6 +98,15 @@ details {
   color: #fff;
 }
 
+.buttom {
+  padding: .1rem .75rem;
+  background: #e9ecef;
+  border: #343a40 1px solid;
+  font-size: .9rem;
+  line-height: 1.5;
+  color: #000;
+}
+
 a {
   text-decoration: none;
 }
@@ -106,6 +115,6 @@ a:hover {
   text-decoration: underline;
 }
 
-ul > li {
+ul>li {
   list-style: square;
 }
