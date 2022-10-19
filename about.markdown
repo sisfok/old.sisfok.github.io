@@ -11,4 +11,8 @@ Komunitas kecil ditengah dunia yang besar. Perhatikan beberapa poin:
 
 #3) Dengan kekuatan besar datang tanggung jawab besar.
 
-[bergabung](mailto:me@deo.or.id)
+Website ini dibuat oleh programmer yang memprioritaskan kecepatan, distraksi
+sekecil mungkin dan mengutamakan penyampaian informasi sehingga kurang
+memprioritaskan estektik. Harap maklum!
+
+[join ke grup 🗿](mailto:me@deo.or.id){: .btn}

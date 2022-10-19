@@ -1,89 +1,87 @@
 {%- include header.html -%}
+<h2>selamat datang di page kami!</h2>
+<hr>
+<h4>Proyek terbaru:</h4>
+<ul>
+  <li>Refactory tutorial Python ke markdown</li>
+  <li>Porting tutorial Python ke web</li>
+  <li>Buat daftar link external untuk tutorial</li>
+</ul>
+<hr>
+<p>
+  Tulisan ini berbasis "<b>Google Sana, Google Sini, Coba Itu, Coba Ini</b>"
+  (GSGSCICI). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah ada
+  klaim bahwa ini merupakan karya asli, serta belum tentu pula merupakan
+  solusi terbaik. Mohon kiranya memberikan tanggapan, terutama jika memiliki
+  solusi alternatif. Semoga catatan ini akan bermanfaat di masa mendatang.
+</p>
 
-<body>
-  <a href="/">home</a>
-  <a href="/about.html">about</a>
-  <h1 class="text-center">≧◉ᴥ◉≦ Hellllooooo</h1>
-  <img src="https://www.privacytools.io/img/warrant-canary.svg" alt="" srcset="" id="canary">
+<h4>Beberapa tulisan:</h4>
+<details>
+  <summary>Pengantar Pemrograman</summary>
+  <p>
+    Pengantar Pemrograman adalah mata kuliah di tahun pertama
+    semester pertama. Mata kuliah ini membahas mengenai dasar-dasar
+    pemrograman. Bahasa pemrograman yang digunakan dalam kuliah ini
+    adalah bahasa Java.
+  </p>
+  <p>Materi yang diajarkan meliputi:</p>
+  <ol>{% for post in site.posts reversed %}{% if post.path contains 'pp' %}
+    <li>
+      <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
+        data-bs-animation="false" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    </li> {% endif %} {% endfor %}
+  </ol>
 
-  <article>
-    <p>
-      Tulisan ini berbasis "<b>Google Sana, Google Sini, Coba Itu, Coba Ini</b>"
-      (GSGSCICI). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah ada
-      klaim bahwa ini merupakan karya asli, serta belum tentu pula merupakan
-      solusi terbaik. Mohon kiranya memberikan tanggapan, terutama jika memiliki
-      solusi alternatif. Semoga catatan ini akan bermanfaat di masa mendatang.
-    </p>
-  </article>
+  Reference:
+  <ol>
+    <li>Java: The Complete Reference Eleventh Edition</li>
+    <li>
+      Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
+      Komputer/Sistem Informasi Universitas Hasanuddin
+    </li>
+  </ol>
+</details>
 
-  <article>
-    <h4>Beberapa tulisan:</h4>
-    <details>
-      <summary>Pengantar Pemrograman</summary>
-      <p>
-        Pengantar Pemrograman adalah mata kuliah di tahun pertama
-        semester pertama. Mata kuliah ini membahas mengenai dasar-dasar
-        pemrograman. Bahasa pemrograman yang digunakan dalam kuliah ini
-        adalah bahasa Java.
-      </p>
-      <p>Materi yang diajarkan meliputi:</p>
-      <ol>{% for post in site.posts reversed %}{% if post.path contains 'pp' %}
-        <li>
-          <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
-            data-bs-animation="false" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-        </li> {% endif %} {% endfor %}
-      </ol>
+<details>
+  <summary>Pemrograman Berorientasi Objek</summary>
+  <p>
+    PBO atau Pemrograman Berorientasi Objek adalah matakuliah
+    tahun pertama semester kedua yang mengajarkan materi tentang
+    lanjutan dari materi Pengantar Pemrograman.
+  </p>
+  <p>Materi yang diajarkan meliputi:</p>
+  <ol>{% for post in site.posts reversed %}{% if post.path contains 'pbo' %}
+    <li>
+      <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
+        data-bs-animation="false" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    </li> {% endif %} {% endfor %}
+  </ol>
 
-      Reference:
-      <ol>
-        <li>Java: The Complete Reference Eleventh Edition</li>
-        <li>
-          Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
-          Komputer/Sistem Informasi Universitas Hasanuddin
-        </li>
-      </ol>
-    </details>
+  Reference:
+  <ol>
+    <li>Java: The Complete Reference Eleventh Edition</li>
+    <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
+      Komputer/Sistem Informasi Universitas Hasanuddin</li>
+  </ol>
+</details>
 
-    <details>
-      <summary>Pemrograman Berorientasi Objek</summary>
-      <p>
-        PBO atau Pemrograman Berorientasi Objek adalah matakuliah
-        tahun pertama semester kedua yang mengajarkan materi tentang
-        lanjutan dari materi Pengantar Pemrograman.
-      </p>
-      <p>Materi yang diajarkan meliputi:</p>
-      <ol>{% for post in site.posts reversed %}{% if post.path contains 'pbo' %}
-        <li>
-          <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
-            data-bs-animation="false" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-        </li> {% endif %} {% endfor %}
-      </ol>
+<details>
+  <summary>Pengantar Pemrograman dengan Python</summary>
+  <p>Coming soon.!</p>
+</details>
 
-      Reference:
-      <ol>
-        <li>Java: The Complete Reference Eleventh Edition</li>
-        <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
-          Komputer/Sistem Informasi Universitas Hasanuddin</li>
-      </ol>
-    </details>
-
-    <details>
-      <summary>Pengantar Pemrograman dengan Python</summary>
-      <p>Coming soon.!</p>
-    </details>
-
-    <details>
-      <summary>Catatan Assembly</summary>
-      <p>Catatan belajar pemrograman level bawah dengan menggunakan Linux-x86_64</p>
-      <ol>{% for post in site.posts reversed %}{% if post.path contains 'assembly' %}
-        <li>
-          <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
-            data-bs-animation="false" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-        </li> {% endif %} {% endfor %}
-      </ol>
-    </details>
-  </article>
-  {%- include footer.html -%}
+<details>
+  <summary>Catatan Assembly</summary>
+  <p>Catatan belajar pemrograman level bawah dengan menggunakan Linux-x86_64</p>
+  <ol>{% for post in site.posts reversed %}{% if post.path contains 'assembly' %}
+    <li>
+      <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
+        data-bs-animation="false" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    </li> {% endif %} {% endfor %}
+  </ol>
+</details>
+{%- include footer.html -%}
 </body>
 
 </html>
