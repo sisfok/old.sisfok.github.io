@@ -54,8 +54,7 @@
   <p>Materi yang diajarkan meliputi:</p>
   <ol>{% for post in site.posts reversed %}{% if post.path contains 'pbo' %}
     <li>
-      <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
-        data-bs-animation="false" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
     </li> {% endif %} {% endfor %}
   </ol>
 
@@ -77,12 +76,10 @@
   <p>Catatan belajar pemrograman level bawah dengan menggunakan Linux-x86_64</p>
   <ol>{% for post in site.posts reversed %}{% if post.path contains 'assembly' %}
     <li>
-      <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
-        data-bs-animation="false" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
     </li> {% endif %} {% endfor %}
   </ol>
 </details>
 {%- include footer.html -%}
 </body>
-
 </html>
