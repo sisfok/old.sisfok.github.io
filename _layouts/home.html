@@ -1,24 +1,40 @@
 {%- include header.html -%}
 <h2>selamat datang di page kami!</h2>
 <hr>
-<div class="section">
-<h4>Proyek terbaru:</h4>
-<ul>
-  <li>Refactory tutorial Python ke markdown</li>
-  <li>Porting tutorial Python ke web</li>
-  <li>Buat daftar link external untuk tutorial</li>
-</ul>
-<a href="https://github.com/sisfok" class="buttom">lihat repo kami di GitHub!</a>
-</div>
+<!-- proyek terbaru -->
+<article>
+  <h4>Proyek terbaru:</h4>
+  <ul>
+    <li>Refactory tutorial Python ke markdown</li>
+    <li>Porting tutorial Python ke web</li>
+    <li>Buat daftar link external untuk tutorial</li>
+  </ul>
+  <a href="https://github.com/sisfok" class="button">lihat repo kami di GitHub!
+    <span class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+        <path
+          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z">
+        </path>
+      </svg>
+    </span>
+  </a>
+</article>
 <hr>
+<!-- disklamer -->
 <p>
-  Tulisan ini berbasis "<b>Google Sana, Google Sini, Coba Itu, Coba Ini</b>"
-  (GSGSCICI). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah ada
-  klaim bahwa ini merupakan karya asli, serta belum tentu pula merupakan
-  solusi terbaik. Mohon kiranya memberikan tanggapan, terutama jika memiliki
-  solusi alternatif. Semoga catatan ini akan bermanfaat di masa mendatang.
+  Website ini semacam log tempat menyimpan catatan-catatan pelajaran yang
+  sebelumnya pernah dipelajari. Jika terdapat kekelirian mohon dikoreksi.
 </p>
 
+<div class="alert alert-danger">
+  <p>
+    Kami TIDAK bertanggung-jawab atas KEAKURATAN mau pun KERUGIAN yang mungkin terjadi akibat memanfaatkan situs ini. HARAP MENANGGUNG SENDIRI SEGALA RISIKO! Jangan lupa mengungkapkan/ menuliskan penghargaan (acknowledgement) jika anda menggunakan bahan karya dari pihak lain. Situs ini berbasis "<b>Google Sana, Google Sini, Coba Itu, Coba Ini, Lalu Tanya-tanyi</b>" (GSGSCICILTT). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah ada klaim bahwa ini merupakan karya asli, serta belum tentu pula merupakan solusi terbaik, serta bukan untuk konsumsi Scopus :). Mohon kiranya memberikan tanggapan, terutama jika memiliki solusi alternatif. Semoga catatan ini akan bermanfaat di masa mendatang, saat sudah lupa cara menyelesaikan masalah trivia ini.
+  </p>
+  <br>
+  - <a href="https://rms46.vlsm.org">Rahmat M. Samik-Ibrahim</a>
+</div>
+
+<!-- tulisan -->
 <h4>Beberapa tulisan:</h4>
 <details>
   <summary>Pengantar Pemrograman</summary>
@@ -31,8 +47,7 @@
   <p>Materi yang diajarkan meliputi:</p>
   <ol>{% for post in site.posts reversed %}{% if post.path contains 'pp' %}
     <li>
-      <a href="{{ post.url }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-delay-show=0
-        data-bs-animation="false" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
     </li> {% endif %} {% endfor %}
   </ol>
 
@@ -45,7 +60,6 @@
     </li>
   </ol>
 </details>
-
 <details>
   <summary>Pemrograman Berorientasi Objek</summary>
   <p>
@@ -82,6 +96,34 @@
     </li> {% endif %} {% endfor %}
   </ol>
 </details>
+<hr>
+<!-- team -->
+<h2 class="text-center">Team:</h2>
+<div class="avatar">
+  <a href="https://github.com/deovaliandro">
+    <img src="https://github.com/deovaliandro.png" alt="" title="Deo" /></a>
+  <a href="https://github.com/BobChrismansyah">
+    <img src="https://github.com/BobChrismansyah.png" alt="" title="Bob" /></a>
+  <a href="https://github.com/Michikow10">
+    <img src="https://github.com/Michikow10.png" alt="" title="Ciko" /></a>
+  <a href="https://github.com/EdgarWi1">
+    <img src="https://github.com/EdgarWi1.png" alt="" title="Edgar" /></a>
+  <a href="https://github.com/Devonian10">
+    <img src="https://github.com/Devonian10.png" alt="" title="Devon" /></a>
+  <a href="https://github.com/deril1709">
+    <img src="https://github.com/deril1709.png" alt="" title="Deril" /></a>
+  <a href="https://github.com/yukiao">
+    <img src="https://github.com/yukiao.png" alt="" title="Sony" /></a>
+  <a href="https://github.com/trulyroselyne">
+    <img src="https://github.com/trulyroselyne.png" alt="" title="Truly" /></a>
+  <a href="https://github.com/Jons1104">
+    <img src="https://github.com/Jons1104.png" alt="" title="Jons" /></a>
+  <a href="https://github.com/AJRPlayz">
+    <img src="https://github.com/AJRPlayz.png" alt="" title="Juna" /></a>
+</div>
+<hr>
+<!-- footer -->
 {%- include footer.html -%}
 </body>
+
 </html>

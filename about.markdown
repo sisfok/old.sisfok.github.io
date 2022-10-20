@@ -15,4 +15,4 @@ Website ini dibuat oleh programmer yang memprioritaskan kecepatan, distraksi
 sekecil mungkin dan mengutamakan penyampaian informasi sehingga kurang
 memprioritaskan estektik. Harap maklum!
 
-[join ke grup 🗿](mailto:me@deo.or.id){: .btn}
+[join ke grup 🗿](mailto:me@deo.or.id){: .button}
