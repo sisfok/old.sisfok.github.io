@@ -2,12 +2,6 @@
   text-rendering: geometricPrecision;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    margin: 3vw;
-  }
-}
-
 ::selection {
   color: #444;
   background: #f0d547;
@@ -16,6 +10,13 @@
 html,
 body {
   margin: 0
+}
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    margin: 3vw;
+  }
 }
 
 body {
