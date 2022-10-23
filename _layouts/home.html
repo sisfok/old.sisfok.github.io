@@ -45,7 +45,7 @@
     adalah bahasa Java.
   </p>
   <p>Materi yang diajarkan meliputi:</p>
-  <ol>{% for post in site.posts reversed %}{% if post.path contains 'pp' %}
+  <ol>{% for post in site.posts reversed %}{% if post.path contains 'pp-java' %}
     <li>
       <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
     </li> {% endif %} {% endfor %}
@@ -68,7 +68,7 @@
     lanjutan dari materi Pengantar Pemrograman.
   </p>
   <p>Materi yang diajarkan meliputi:</p>
-  <ol>{% for post in site.posts reversed %}{% if post.path contains 'pbo' %}
+  <ol>{% for post in site.posts reversed %}{% if post.path contains 'pbo-java' %}
     <li>
       <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
     </li> {% endif %} {% endfor %}
@@ -84,7 +84,22 @@
 
 <details>
   <summary>Pengantar Pemrograman dengan Python</summary>
-  <p>Coming soon.!</p>
+  <p>
+    Pengantar Pemrograman dengan menggunakan Python sebagai bahasanya.
+  </p>
+  <p>Materi yang diajarkan meliputi:</p>
+  <ol>{% for post in site.posts reversed %}{% if post.path contains 'pbo-python' %}
+    <li>
+      <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    </li> {% endif %} {% endfor %}
+  </ol>
+
+  Reference:
+  <ol>
+    <li><a href="https://docs.python.org/3/">Dokumentasi Resmi Python</a></li>
+    <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
+      Komputer/Sistem Informasi Universitas Hasanuddin</li>
+  </ol>
 </details>
 
 <details>
