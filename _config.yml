@@ -8,7 +8,11 @@ github_username: deovaliandro
 plugins:
   - jekyll-feed
   - jekyll-asciidoc
-  - jekyll-toc
+  - jekyll-mentions
+  - jekyll-avatar
+
+jekyll-mentions:
+  base_url: https://github.com
 
 destination: ./public
 markdown: kramdown

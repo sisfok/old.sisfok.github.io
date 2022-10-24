@@ -218,23 +218,23 @@ tr {
   }
 }
 
-.avatar {
+.ava {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: safe;
+}
 
-  img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    filter: grayscale(100%);
-    transition: 0.1s;
-    padding: 2px;
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  transition: 0.1s;
+  padding: 2px;
 
-    &:hover {
-      filter: grayscale(0%);
-    }
+  &:hover {
+    filter: grayscale(0%);
   }
 }
 
@@ -427,6 +427,12 @@ pre.highlight {
 
 #toc {
   list-style: decimal-leading-zero;
+}
+
+#signed {
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  text-decoration: underline;
 }
 
 /* highlight */

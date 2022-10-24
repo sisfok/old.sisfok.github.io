@@ -114,27 +114,12 @@
 <hr>
 <!-- team -->
 <h2 class="text-center">Team:</h2>
-<div class="avatar">
-  <a href="https://github.com/deovaliandro">
-    <img src="https://github.com/deovaliandro.png" alt="" title="Deo" /></a>
-  <a href="https://github.com/BobChrismansyah">
-    <img src="https://github.com/BobChrismansyah.png" alt="" title="Bob" /></a>
-  <a href="https://github.com/Michikow10">
-    <img src="https://github.com/Michikow10.png" alt="" title="Ciko" /></a>
-  <a href="https://github.com/EdgarWi1">
-    <img src="https://github.com/EdgarWi1.png" alt="" title="Edgar" /></a>
-  <a href="https://github.com/Devonian10">
-    <img src="https://github.com/Devonian10.png" alt="" title="Devon" /></a>
-  <a href="https://github.com/deril1709">
-    <img src="https://github.com/deril1709.png" alt="" title="Deril" /></a>
-  <a href="https://github.com/yukiao">
-    <img src="https://github.com/yukiao.png" alt="" title="Sony" /></a>
-  <a href="https://github.com/trulyroselyne">
-    <img src="https://github.com/trulyroselyne.png" alt="" title="Truly" /></a>
-  <a href="https://github.com/Jons1104">
-    <img src="https://github.com/Jons1104.png" alt="" title="Jons" /></a>
-  <a href="https://github.com/AJRPlayz">
-    <img src="https://github.com/AJRPlayz.png" alt="" title="Juna" /></a>
+
+<div class="ava">
+{% assign employees = "deovaliandro|BobChrismansyah|Michikow10|EdgarWi1|Devonian10|deril1709|yukiao|trulyroselyne|Jons1104|AJRPlayz" | split:"|" %}
+{% for employee in employees %}
+  {% avatar user=employee lazy=true %}
+{% endfor %}
 </div>
 <hr>
 <!-- footer -->
