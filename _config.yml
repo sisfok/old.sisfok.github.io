@@ -3,7 +3,7 @@ email: sisfok.uh@gmail.com
 description: web sisfok ini untuk tempat belajar
 baseurl: ""
 url: "https://sisfok.github.io/"
-github_username:  deovaliandro
+github_username: deovaliandro
 
 plugins:
   - jekyll-feed
