@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap');
 
+:root {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
 * {
   text-rendering: geometricPrecision;
 }
@@ -13,17 +23,16 @@
 
 html {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  overflow-wrap: break-word;
   font-size: 1rem;
   line-height: 1.4rem;
-  font-family: sans-serif;
   max-width: 720px;
   margin: 0 auto;
-  align-items: stretch;
+  word-wrap: break-word;
 }
 
 nav {
@@ -34,10 +43,6 @@ nav {
 h4 {
   margin-top: 0;
   margin-bottom: 1rem;
-}
-
-p {
-  hyphens: auto;
 }
 
 cite {
@@ -70,12 +75,12 @@ ol {
 }
 
 pre {
-  font-family: monospace;
+  font-family: 'IBM Plex Mono', monospace;
   overflow-x: scroll;
 }
 
 code {
-  // font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   line-height: 0;
 
   &:not(pre>code) {
@@ -145,6 +150,39 @@ mark {
   padding: 2px 5px;
   border-radius: 4px;
   background-color: #fd3;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  overflow: auto;
+  width: 100%;
+
+  caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+}
+
+td {
+  border: 1px solid #898EA4;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+th {
+  border: 1px solid #898EA4;
+  text-align: left;
+  padding: 0.5rem;
+  background-color: #f5f7ff;
+  font-weight: bold;
+}
+
+tr {
+  &:nth-child(even) {
+    background-color: #f5f7ff;
+  }
 }
 
 .text-muted {
@@ -244,7 +282,7 @@ mark {
   background-color: #F4F4F4;
   margin: 1rem 0 1rem 0;
 
-  >p {
+  p {
     margin: 0;
   }
 }
@@ -268,329 +306,6 @@ mark {
 
   body {
     margin: 3vw;
-  }
-}
-
-/* highlight */
-.highlight {
-  .cs {
-    font-style: italic;
-    color: #999;
-    font-weight: 500;
-  }
-
-  .ge {
-    font-style: italic;
-    color: #000;
-  }
-
-  table {
-    td {
-      padding: 5px;
-    }
-
-    pre {
-      margin: 0;
-    }
-  }
-
-  .c {
-    color: #998;
-    font-style: italic;
-  }
-
-  .c1 {
-    color: #998;
-    font-style: italic;
-  }
-
-  .cd {
-    color: #998;
-    font-style: italic;
-  }
-
-  .ch {
-    color: #998;
-    font-style: italic;
-  }
-
-  .cm {
-    color: #998;
-    font-style: italic;
-  }
-
-  .cpf {
-    color: #998;
-    font-style: italic;
-  }
-
-  .cp {
-    color: #999;
-    font-weight: 500;
-  }
-
-  .err {
-    color: #a61717;
-    background-color: #e3d2d2;
-  }
-
-  .gd {
-    color: #000;
-    background-color: #fdd;
-  }
-
-  .gr {
-    color: #a00;
-  }
-
-  .gt {
-    color: #a00;
-  }
-
-  .bp {
-    color: #999;
-  }
-
-  .gh {
-    color: #999;
-  }
-
-  .gi {
-    color: #000;
-    background-color: #dfd;
-  }
-
-  .go {
-    color: #888;
-  }
-
-  .gp {
-    color: #555;
-  }
-
-  .nn {
-    color: #555;
-  }
-
-  .gs {
-    font-weight: 500;
-  }
-
-  .gu {
-    color: #aaa;
-  }
-
-  .k {
-    color: #000;
-    font-weight: 500;
-  }
-
-  .kc {
-    color: #000;
-    font-weight: 500;
-  }
-
-  .kd {
-    color: #000;
-    font-weight: 500;
-  }
-
-  .kn {
-    color: #000;
-    font-weight: 500;
-  }
-
-  .kp {
-    color: #000;
-    font-weight: 500;
-  }
-
-  .kr {
-    color: #000;
-    font-weight: 500;
-  }
-
-  .kv {
-    color: #000;
-    font-weight: 500;
-  }
-
-  .o {
-    color: #000;
-    font-weight: 500;
-  }
-
-  .ow {
-    color: #000;
-    font-weight: 500;
-  }
-
-  .sa {
-    color: #000;
-    font-weight: 500;
-  }
-
-  .kt {
-    color: #458;
-    font-weight: 500;
-  }
-
-  .nc {
-    color: #458;
-    font-weight: 500;
-  }
-
-  .il {
-    color: #099;
-  }
-
-  .m {
-    color: #099;
-  }
-
-  .mb {
-    color: #099;
-  }
-
-  .mf {
-    color: #099;
-  }
-
-  .mh {
-    color: #099;
-  }
-
-  .mi {
-    color: #099;
-  }
-
-  .mo {
-    color: #099;
-  }
-
-  .mx {
-    color: #099;
-  }
-
-  .dl {
-    color: #d14;
-  }
-
-  .s {
-    color: #d14;
-  }
-
-  .s1 {
-    color: #d14;
-  }
-
-  .s2 {
-    color: #d14;
-  }
-
-  .sb {
-    color: #d14;
-  }
-
-  .sc {
-    color: #d14;
-  }
-
-  .sd {
-    color: #d14;
-  }
-
-  .se {
-    color: #d14;
-  }
-
-  .sh {
-    color: #d14;
-  }
-
-  .si {
-    color: #d14;
-  }
-
-  .sx {
-    color: #d14;
-  }
-
-  .sr {
-    color: #009926;
-  }
-
-  .ss {
-    color: #990073;
-  }
-
-  .na {
-    color: teal;
-  }
-
-  .no {
-    color: teal;
-  }
-
-  .nv {
-    color: teal;
-  }
-
-  .vc {
-    color: teal;
-  }
-
-  .vg {
-    color: teal;
-  }
-
-  .vi {
-    color: teal;
-  }
-
-  .vm {
-    color: teal;
-  }
-
-  .nb {
-    color: #0086b3;
-  }
-
-  .nd {
-    color: #3c5d5d;
-    font-weight: 500;
-  }
-
-  .ni {
-    color: purple;
-  }
-
-  .fm {
-    color: #900;
-    font-weight: 700;
-  }
-
-  .ne {
-    color: #900;
-    font-weight: 700;
-  }
-
-  .nf {
-    color: #900;
-    font-weight: 700;
-  }
-
-  .nl {
-    color: #900;
-    font-weight: 700;
-  }
-
-  .nt {
-    color: navy;
-  }
-
-  .w {
-    color: #bbb;
   }
 }
 
@@ -662,6 +377,11 @@ mark {
 }
 
 // markdown
+pre.highlight {
+  margin-top: 0;
+  padding: 10px;
+}
+
 .highlighter-rouge {
   margin-bottom: 20px;
   width: 100%;
@@ -681,45 +401,6 @@ mark {
   line-height: 1rem;
 }
 
-pre.highlight {
-  margin-top: 0;
-  padding: 10px;
-}
-
-table {
-  border-collapse: collapse;
-  display: block;
-  margin: 1.5rem 0;
-  overflow: auto;
-  width: 100%;
-
-  caption {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-}
-
-td {
-  border: 1px solid #898EA4;
-  text-align: left;
-  padding: 0.5rem;
-}
-
-th {
-  border: 1px solid #898EA4;
-  text-align: left;
-  padding: 0.5rem;
-  background-color: #f5f7ff;
-  font-weight: bold;
-}
-
-tr {
-  &:nth-child(even) {
-    background-color: #f5f7ff;
-  }
-}
-
-
 .language-bash::before {
   content: "Bash";
   position: static;
@@ -731,3 +412,22 @@ tr {
   border-top-right-radius: .3em;
   line-height: 1rem;
 }
+
+.language-java::before {
+  content: "Java";
+  position: static;
+  display: block;
+  color: #FFFFFF;
+  background: #3863d9;
+  padding: 5px 0 5px 10px;
+  border-top-left-radius: .3em;
+  border-top-right-radius: .3em;
+  line-height: 1rem;
+}
+
+#toc {
+  list-style: decimal-leading-zero;
+}
+
+/* highlight */
+.highlight {.cs {font-style: italic;color: #999;font-weight: 500;}.ge {font-style: italic;color: #000;}table {td {padding: 5px;}pre {margin: 0;}}.c {color: #998;font-style: italic;}.c1 {color: #998;font-style: italic;}.cd {color: #998;font-style: italic;}.ch {color: #998;font-style: italic;}.cm {color: #998;font-style: italic;}.cpf {color: #998;font-style: italic;}.cp {color: #999;font-weight: 500;}.err {color: #a61717;background-color: #e3d2d2;}.gd {color: #000;background-color: #fdd;}.gr {color: #a00;}.gt {color: #a00;}.bp {color: #999;}.gh {color: #999;}.gi {color: #000;background-color: #dfd;}.go {color: #888;}.gp {color: #555;}.nn {color: #555;}.gs {font-weight: 500;}.gu {color: #aaa;}.k {color: #000;font-weight: 500;}.kc {color: #000;font-weight: 500;}.kd {color: #000;font-weight: 500;}.kn {color: #000;font-weight: 500;}.kp {color: #000;font-weight: 500;}.kr {color: #000;font-weight: 500;}.kv {color: #000;font-weight: 500;}.o {color: #000;font-weight: 500;}.ow {color: #000;font-weight: 500;}.sa {color: #000;font-weight: 500;}.kt {color: #458;font-weight: 500;}.nc {color: #458;font-weight: 500;}.il {color: #099;}.m {color: #099;}.mb {color: #099;}.mf {color: #099;}.mh {color: #099;}.mi {color: #099;}.mo {color: #099;}.mx {color: #099;}.dl {color: #d14;}.s {color: #d14;}.s1 {color: #d14;}.s2 {color: #d14;}.sb {color: #d14;}.sc {color: #d14;}.sd {color: #d14;}.se {color: #d14;}.sh {color: #d14;}.si {color: #d14;}.sx {color: #d14;}.sr {color: #009926;}.ss {color: #990073;}.na {color: teal;}.no {color: teal;}.nv {color: teal;}.vc {color: teal;}.vg {color: teal;}.vi {color: teal;}.vm {color: teal;}.nb {color: #0086b3;}.nd {color: #3c5d5d;font-weight: 500;}.ni {color: purple;}.fm {color: #900;font-weight: 700;}.ne {color: #900;font-weight: 700;}.nf {color: #900;font-weight: 700;}.nl {color: #900;font-weight: 700;}.nt {color: navy;}.w {color: #bbb;}}

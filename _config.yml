@@ -8,6 +8,7 @@ github_username:  deovaliandro
 plugins:
   - jekyll-feed
   - jekyll-asciidoc
+  - jekyll-toc
 
 destination: ./public
 markdown: kramdown

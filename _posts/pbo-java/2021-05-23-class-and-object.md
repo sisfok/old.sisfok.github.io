@@ -55,7 +55,7 @@ Aturan untuk `class` Java:
 Bentuk umum:
 
 ```java
-class  ClassName {
+class ClassName {
      field;
      method;
 }
