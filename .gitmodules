@@ -7,3 +7,6 @@
 [submodule "labs/_pbo-java"]
 	path = labs/_pbo-java
 	url = git@github.com:SisfoK/pbo-java.git
+[submodule "labs/_asm"]
+	path = labs/_asm
+	url = git@github.com:SisfoK/asm.git
