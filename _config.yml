@@ -56,3 +56,5 @@ collections:
   #     - Bab-2.md
   #     - Bab-3.md
   #     - Bab-4.md
+
+exclude: ['README.md', '*/README.md']
