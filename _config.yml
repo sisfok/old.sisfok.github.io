@@ -17,3 +17,16 @@ jekyll-mentions:
 destination: ./public
 markdown: kramdown
 highlighter: rouge
+
+collections_dir: labs
+collections:
+  pp-java:
+    directory: /labs/_pp-java/
+    # order:
+    #   - hello-world.md
+    output: true
+    permalink: /:collection/:name
+  pbo-java:
+    directory: /labs/pbo-java/
+    output: true
+    permalink: /:collection/:name
