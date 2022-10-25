@@ -34,6 +34,7 @@ collections:
       - jump-statement.md
       - array.md
       - method.md
+      - string.md
       - exceptions.md
       - file-io.md
   # pbo-java:
