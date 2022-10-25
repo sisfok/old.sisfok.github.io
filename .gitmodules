@@ -1,3 +1,6 @@
 [submodule "labs/_pp-python"]
 	path = labs/_pp-python
 	url = git@github.com:SisfoK/pp-python.git
+[submodule "labs/_pp-java"]
+	path = labs/_pp-java
+	url = git@github.com:SisfoK/pp-java.git

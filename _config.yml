@@ -22,8 +22,18 @@ collections_dir: labs
 collections:
   pp-java:
     directory: /labs/_pp-java/
-    # order:
-    #   - hello-world.md
+    order:
+      - struktur-dasar.md
+      - io.md
+      - tipe-data.md
+      - operasi.md
+      - penyeleksian.md
+      - perulangan.md
+      - jump-statement.md
+      - array.md
+      - method.md
+      - exceptions.md
+      - file-io.md
     output: true
     permalink: /:collection/:name
   pbo-java:
