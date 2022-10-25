@@ -4,3 +4,6 @@
 [submodule "labs/_pp-java"]
 	path = labs/_pp-java
 	url = git@github.com:SisfoK/pp-java.git
+[submodule "labs/_pbo-java"]
+	path = labs/_pbo-java
+	url = git@github.com:SisfoK/pbo-java.git
