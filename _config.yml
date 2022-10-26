@@ -48,14 +48,14 @@ collections:
       - inheritance.md
       - abstract-class-dan-interface.md
       - polymorphism.md
-  # pp-python:
-  #   directory: /labs/pp-python/
-  #   output: true
-  #   permalink: /:collecction/:name
-  #   order:
-  #     - Bab-1.md
-  #     - Bab-2.md
-  #     - Bab-3.md
-  #     - Bab-4.md
+  pp-python:
+    directory: /labs/pp-python/
+    output: true
+    permalink: /:collecction/:name
+    order:
+      - Bab-1.md
+      - Bab-2.md
+      - Bab-3.md
+      - Bab-4.md
 
 exclude: ['README.md', '*/README.md']
