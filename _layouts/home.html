@@ -10,10 +10,10 @@
     <li>Porting tutorial Python ke web</li>
     <li>Buat daftar link external untuk tutorial</li>
   </ol>
-  <a href="https://github.com/sisfok" class="button">lihat repo kami di GitHub!
+  <a href="https://github.com/sisfok" class="button btn-primary">lihat repo kami di GitHub!
     <span class="icon">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
-        <path
+        <path fill="white"
           d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z">
         </path>
       </svg>
@@ -30,13 +30,17 @@
 
 <div class="alert alert-danger">
   <p>
-    Kami TIDAK bertanggung-jawab atas KEAKURATAN mau pun KERUGIAN yang mungkin terjadi akibat memanfaatkan situs ini.
-    HARAP MENANGGUNG SENDIRI SEGALA RISIKO! Jangan lupa mengungkapkan/ menuliskan penghargaan (acknowledgement) jika
-    anda menggunakan bahan karya dari pihak lain. Situs ini berbasis "<b>Google Sana, Google Sini, Coba Itu, Coba Ini,
-      Lalu Tanya-tanyi</b>" (GSGSCICILTT). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah ada klaim bahwa
-    ini merupakan karya asli, serta belum tentu pula merupakan solusi terbaik, serta bukan untuk konsumsi Scopus :).
-    Mohon kiranya memberikan tanggapan, terutama jika memiliki solusi alternatif. Semoga catatan ini akan bermanfaat di
-    masa mendatang, saat sudah lupa cara menyelesaikan masalah trivia ini.
+    Kami TIDAK bertanggung-jawab atas KEAKURATAN mau pun KERUGIAN yang mungkin
+    terjadi akibat memanfaatkan situs ini. HARAP MENANGGUNG SENDIRI SEGALA
+    RISIKO! Jangan lupa mengungkapkan/ menuliskan penghargaan (acknowledgement)
+    jika anda menggunakan bahan karya dari pihak lain. Situs ini berbasis
+    "<b>Google Sana, Google Sini, Coba Itu, Coba Ini, Lalu Tanya-tanyi</b>"
+    (GSGSCICILTT). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah
+    ada klaim bahwa ini merupakan karya asli, serta belum tentu pula merupakan
+    solusi terbaik, serta bukan untuk konsumsi Scopus :). Mohon kiranya
+    memberikan tanggapan, terutama jika memiliki solusi alternatif. Semoga
+    catatan ini akan bermanfaat di masa mendatang, saat sudah lupa cara
+    menyelesaikan masalah trivia ini.
   </p>
   <br>
   - <a href="https://rms46.vlsm.org">Rahmat M. Samik-Ibrahim</a>
@@ -47,10 +51,9 @@
 <details>
   <summary>Pengantar Pemrograman</summary>
   <p>
-    Pengantar Pemrograman adalah mata kuliah di tahun pertama
-    semester pertama. Mata kuliah ini membahas mengenai dasar-dasar
-    pemrograman. Bahasa pemrograman yang digunakan dalam kuliah ini
-    adalah bahasa Java.
+    Pengantar Pemrograman adalah mata kuliah di tahun pertama semester pertama.
+    Mata kuliah ini membahas mengenai dasar-dasar pemrograman. Bahasa
+    pemrograman yang digunakan dalam kuliah ini adalah bahasa Java.
   </p>
   <p>Materi yang diajarkan meliputi:</p>
   <ol>{% for ppjava in site.pp-java %}
@@ -65,7 +68,7 @@
     <li>Java: The Complete Reference Eleventh Edition</li>
     <li>
       Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
-      Komputer/Sistem Informasi Universitas Hasanuddin
+      Komputer Universitas Hasanuddin
     </li>
   </ol>
 </details>
@@ -88,7 +91,8 @@
   <ol>
     <li>Java: The Complete Reference Eleventh Edition</li>
     <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
-      Komputer/Sistem Informasi Universitas Hasanuddin</li>
+      Komputer Universitas Hasanuddin
+    </li>
   </ol>
 </details>
 
@@ -107,8 +111,9 @@
   Reference:
   <ol>
     <li><a href="https://docs.python.org/3/">Dokumentasi Resmi Python</a></li>
-    <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
-      Komputer/Sistem Informasi Universitas Hasanuddin</li>
+    <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Sistem
+      Informasi Universitas Hasanuddin
+    </li>
   </ol>
 </details>
 
@@ -127,9 +132,8 @@
 <!-- team -->
 <h3>team:</h3>
 <div class="ava">
-  {% assign teams =
-  "deovaliandro|BobChrismansyah|Michikow10|EdgarWi1|Devonian10|deril1709|yukiao|trulyroselyne|Jons1104|AJRPlayz" |
-  split:"|" %}
+  {% assign teams = "deovaliandro|BobChrismansyah|Michikow10|EdgarWi1|Devonian10
+  |deril1709|yukiao|trulyroselyne|Jons1104|AJRPlayz" | split:"|" %}
   {% for team in teams %}
   <a href="https://github.com/{{team}}">{% avatar user=team %}</a>
   {% endfor %}

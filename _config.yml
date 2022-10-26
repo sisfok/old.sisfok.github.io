@@ -37,17 +37,17 @@ collections:
       - string.md
       - exceptions.md
       - file-io.md
-  # pbo-java:
-  #   directory: /labs/pbo-java/
-  #   output: true
-  #   permalink: /:collection/:name
-  #   order:
-  #     - class-dan-object.md
-  #     - method.md
-  #     - constructor.md
-  #     - inheritance.md
-  #     - abstract-class-dan-interface.md
-  #     - polymorphism.md
+  pbo-java:
+    directory: /labs/pbo-java/
+    output: true
+    permalink: /:collection/:name
+    order:
+      - class-dan-object.md
+      - method.md
+      - constructor.md
+      - inheritance.md
+      - abstract-class-dan-interface.md
+      - polymorphism.md
   # pp-python:
   #   directory: /labs/pp-python/
   #   output: true
