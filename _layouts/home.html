@@ -102,10 +102,11 @@
     Pengantar Pemrograman dengan menggunakan Python sebagai bahasanya.
   </p>
   <p>Materi yang diajarkan meliputi:</p>
-  <ol>{% for post in site.posts reversed %}{% if post.path contains 'pp-python' %}
+  <ol>{% for python in site.pp-python %}
     <li>
-      <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-    </li> {% endif %} {% endfor %}
+      <a href="{{ python.url }}" title="{{ site.url }}{{ python.url }}">
+        {{ python.title }}</a>
+    </li>{% endfor %}
   </ol>
 
   Reference:

@@ -37,8 +37,9 @@ collections:
       - string.md
       - exceptions.md
       - file-io.md
+  
   pbo-java:
-    directory: /labs/pbo-java/
+    directory: /labs/_pbo-java/
     output: true
     permalink: /:collection/:name
     order:
@@ -49,9 +50,9 @@ collections:
       - abstract-class-dan-interface.md
       - polymorphism.md
   pp-python:
-    directory: /labs/pp-python/
+    directory: /labs/_pp-python/
     output: true
-    permalink: /:collecction/:name
+    permalink: /:collection/:name
     order:
       - Bab-1.md
       - Bab-2.md
