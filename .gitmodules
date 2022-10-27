@@ -10,3 +10,6 @@
 [submodule "labs/_asm"]
 	path = labs/_asm
 	url = git@github.com:SisfoK/asm.git
+[submodule "_sass"]
+	path = _sass
+	url = git@github.com:SisfoK/classless-css.git
