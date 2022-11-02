@@ -1,132 +1,154 @@
 {%- include header.html -%}
-<h2>selamat datang di page kami!</h2>
-<hr>
-
-<!-- proyek terbaru -->
-<h3>todo:</h3>
-<ol>
-  <li>Refactory tutorial Python ke markdown</li>
-  <li>Porting tutorial Python ke web</li>
-  <li>Buat daftar link external untuk tutorial</li>
-</ol>
-<a href="https://github.com/sisfok" class="button btn-primary">lihat repo kami di GitHub!
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
-      <path fill="white"
-        d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z">
-      </path>
-    </svg>
-  </span>
-</a>
-<hr>
-
-<!-- disklamer -->
-<p>
-  Website ini semacam log tempat menyimpan catatan-catatan pelajaran yang
-  sebelumnya pernah dipelajari. Jika terdapat kekelirian mohon dikoreksi.
-</p>
-
-<div class="alert alert-danger">
-  <p>
-    Kami TIDAK bertanggung-jawab atas KEAKURATAN mau pun KERUGIAN yang mungkin
-    terjadi akibat memanfaatkan situs ini. HARAP MENANGGUNG SENDIRI SEGALA
-    RISIKO! Jangan lupa mengungkapkan/ menuliskan penghargaan (acknowledgement)
-    jika anda menggunakan bahan karya dari pihak lain. Situs ini berbasis
-    "<b>Google Sana, Google Sini, Coba Itu, Coba Ini, Lalu Tanya-tanyi</b>"
-    (GSGSCICILTT). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah
-    ada klaim bahwa ini merupakan karya asli, serta belum tentu pula merupakan
-    solusi terbaik, serta bukan untuk konsumsi Scopus :). Mohon kiranya
-    memberikan tanggapan, terutama jika memiliki solusi alternatif. Semoga
-    catatan ini akan bermanfaat di masa mendatang, saat sudah lupa cara
-    menyelesaikan masalah trivia ini.
-  </p>
-  <br>
-  - <a href="https://rms46.vlsm.org">Rahmat M. Samik-Ibrahim</a>
+<div class="header">
+  <h1 class="title">SISFOK</h1>
+  <sub class="sub">Tempat belajar bersama</sub>
 </div>
 
-<!-- tulisan -->
-<h4>Beberapa tulisan:</h4>
-<details>
-  <summary>Pengantar Pemrograman</summary>
-  <p>
-    Pengantar Pemrograman adalah mata kuliah di tahun pertama semester pertama.
-    Mata kuliah ini membahas mengenai dasar-dasar pemrograman. Bahasa
-    pemrograman yang digunakan dalam kuliah ini adalah bahasa Java.
-  </p>
-  <p>Materi yang diajarkan meliputi:</p>
-  <ol>{% for ppjava in site.pp-java %}
-    <li>
-      <a href="{{ ppjava.url }}" title="{{ site.url }}{{ ppjava.url }}">
-        {{ ppjava.title }}</a>
-    </li>{% endfor %}
-  </ol>
+<!-- proyek terbaru -->
+<section class="grid">
+  <div class="gr-1">
+    <h3>todo:</h3>
+    <ol>
+      <li>Refactory tutorial Python ke markdown</li>
+      <li>Porting tutorial Python ke web</li>
+      <li>Buat daftar link external untuk tutorial</li>
+    </ol>
+    <a href="https://github.com/sisfok" class="button btn-primary">lihat repo kami di GitHub!
+      <!-- <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+          <path fill="white"
+            d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z">
+          </path>
+        </svg>
+      </span> -->
+    </a>
+  </div>
+  <!-- <div class="gr-2">
+    <img src="/assets/img/todo.svg" alt="" srcset="">
+  </div> -->
+</section>
+<!-- <hr> -->
 
-  Reference:
-  <ol>
-    <li>Java: The Complete Reference Eleventh Edition</li>
-    <li>
-      Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
-      Komputer Universitas Hasanuddin
-    </li>
-  </ol>
-</details>
+<!-- disklamer -->
+<!-- <section class="grid br-2">
+  <div class="gr-2 v-c">
+    <p>
+      Website ini semacam log tempat menyimpan catatan-catatan pelajaran yang
+      sebelumnya pernah dipelajari. Jika terdapat kekelirian mohon dikoreksi.
+    </p>
+  </div>
+  <div class="gr-1">
+    <img src="/assets/img/journal.svg" alt="">
+  </div>
+</section> -->
 
-<details>
-  <summary>Pemrograman Berorientasi Objek</summary>
-  <p>
-    PBO atau Pemrograman Berorientasi Objek adalah matakuliah
-    tahun pertama semester kedua yang mengajarkan materi tentang
-    lanjutan dari materi Pengantar Pemrograman.
-  </p>
-  <ol>{% for pbojava in site.pbo-java %}
-    <li>
-      <a href="{{ pbojava.url }}" title="{{ site.url }}{{ pbojava.url }}">
-        {{ pbojava.title }}</a>
-    </li>{% endfor %}
-  </ol>
+<section class="grid br-1">
+  <div class="gr-1 v-c">
+    <div class="alert alert-danger">
+      <p>
+        Kami TIDAK bertanggung-jawab atas KEAKURATAN mau pun KERUGIAN yang mungkin
+        terjadi akibat memanfaatkan situs ini. HARAP MENANGGUNG SENDIRI SEGALA
+        RISIKO! Jangan lupa mengungkapkan/ menuliskan penghargaan (acknowledgement)
+        jika anda menggunakan bahan karya dari pihak lain. Situs ini berbasis
+        "<b>Google Sana, Google Sini, Coba Itu, Coba Ini, Lalu Tanya-tanyi</b>"
+        (GSGSCICILTT). Entah ini PLAGIAT, entah ini RISET, yang jelas tidak pernah
+        ada klaim bahwa ini merupakan karya asli, serta belum tentu pula merupakan
+        solusi terbaik, serta bukan untuk konsumsi Scopus :). Mohon kiranya
+        memberikan tanggapan, terutama jika memiliki solusi alternatif. Semoga
+        catatan ini akan bermanfaat di masa mendatang, saat sudah lupa cara
+        menyelesaikan masalah trivia ini.
+      </p>
+      <br>
+      - <a href="https://rms46.vlsm.org">Rahmat M. Samik-Ibrahim</a>
+    </div>
+  </div>
+  <!-- <div class="gr-2">
+    <img src="https://www.mozilla.org/media/img/products/vpn/landing/vpn-cntwell-02-high-res.b65252563f70.png" alt="">
+  </div> -->
+</section>
 
-  Reference:
-  <ol>
-    <li>Java: The Complete Reference Eleventh Edition</li>
-    <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
-      Komputer Universitas Hasanuddin
-    </li>
-  </ol>
-</details>
+<section class="tulisan">
+  <h2>Beberapa tulisan:</h2>
+  <details>
+    <summary>Pengantar Pemrograman</summary>
+    <p>
+      Pengantar Pemrograman adalah mata kuliah di tahun pertama semester pertama.
+      Mata kuliah ini membahas mengenai dasar-dasar pemrograman. Bahasa
+      pemrograman yang digunakan dalam kuliah ini adalah bahasa Java.
+    </p>
+    <p>Materi yang diajarkan meliputi:</p>
+    <ol>{% for ppjava in site.pp-java %}
+      <li class="list-tutorial">
+        <a href="{{ ppjava.url }}" title="{{ site.url }}{{ ppjava.url }}">
+          {{ ppjava.title }}</a>
+      </li>{% endfor %}
+    </ol>
 
-<details>
-  <summary>Pengantar Pemrograman dengan Python</summary>
-  <p>
-    Pengantar Pemrograman dengan menggunakan Python sebagai bahasanya.
-  </p>
-  <p>Materi yang diajarkan meliputi:</p>
-  <ol>{% for python in site.pp-python %}
-    <li>
-      <a href="{{ python.url }}" title="{{ site.url }}{{ python.url }}">
-        {{ python.title }}</a>
-    </li>{% endfor %}
-  </ol>
+    Reference:
+    <ol>
+      <li>Java: The Complete Reference Eleventh Edition</li>
+      <li>
+        Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
+        Komputer Universitas Hasanuddin
+      </li>
+    </ol>
+  </details>
 
-  Reference:
-  <ol>
-    <li><a href="https://docs.python.org/3/">Dokumentasi Resmi Python</a></li>
-    <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Sistem
-      Informasi Universitas Hasanuddin
-    </li>
-  </ol>
-</details>
+  <details>
+    <summary>Pemrograman Berorientasi Objek</summary>
+    <p>
+      PBO atau Pemrograman Berorientasi Objek adalah matakuliah
+      tahun pertama semester kedua yang mengajarkan materi tentang
+      lanjutan dari materi Pengantar Pemrograman.
+    </p>
+    <ol>{% for pbojava in site.pbo-java %}
+      <li>
+        <a href="{{ pbojava.url }}" title="{{ site.url }}{{ pbojava.url }}">
+          {{ pbojava.title }}</a>
+      </li>{% endfor %}
+    </ol>
 
-<details>
-  <summary>Catatan Assembly</summary>
-  <p>Catatan belajar pemrograman level bawah dengan menggunakan Linux-x86_64</p>
-  <ol>{% for post in site.posts reversed %}{% if post.path contains 'assembly' %}
-    <li>
-      <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-    </li> {% endif %} {% endfor %}
-  </ol>
-</details>
+    Reference:
+    <ol>
+      <li>Java: The Complete Reference Eleventh Edition</li>
+      <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Ilmu
+        Komputer Universitas Hasanuddin
+      </li>
+    </ol>
+  </details>
 
-<hr>
+  <details>
+    <summary>Pengantar Pemrograman dengan Python</summary>
+    <p>
+      Pengantar Pemrograman dengan menggunakan Python sebagai bahasanya.
+    </p>
+    <p>Materi yang diajarkan meliputi:</p>
+    <ol>{% for python in site.pp-python %}
+      <li>
+        <a href="{{ python.url }}" title="{{ site.url }}{{ python.url }}">
+          {{ python.title }}</a>
+      </li>{% endfor %}
+    </ol>
+
+    Reference:
+    <ol>
+      <li><a href="https://docs.python.org/3/">Dokumentasi Resmi Python</a></li>
+      <li>Modul Pengantar Pemrograman, Lab Rekayasa Perangkat Lunak Prodi Sistem
+        Informasi Universitas Hasanuddin
+      </li>
+    </ol>
+  </details>
+
+  <details>
+    <summary>Catatan Assembly</summary>
+    <p>Catatan belajar pemrograman level bawah dengan menggunakan Linux-x86_64</p>
+    <ol>{% for post in site.posts reversed %}{% if post.path contains 'assembly' %}
+      <li>
+        <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      </li> {% endif %} {% endfor %}
+    </ol>
+  </details>
+</section>
 
 <!-- team -->
 <h3>team:</h3>
