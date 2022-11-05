@@ -55,9 +55,13 @@ collections:
     output: true
     permalink: /:collection/:name
     order:
+      - PEP-8.md
       - Bab-1.md
       - Bab-2.md
       - Bab-3.md
       - Bab-4.md
+      - Bab-5.md
+      - Bab-6.md
+      - Bab-7.md
 
 exclude: ['README.md', '*/README.md']
