@@ -37,7 +37,6 @@ collections:
       - string.md
       - exceptions.md
       - file-io.md
-
   pbo-java:
     directory: /labs/_pbo-java/
     output: true
@@ -49,7 +48,6 @@ collections:
       - inheritance.md
       - abstract-class-dan-interface.md
       - polymorphism.md
-
   pp-python:
     directory: /labs/_pp-python/
     output: true
