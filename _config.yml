@@ -11,55 +11,10 @@ plugins:
   - jekyll-mentions
   - jekyll-avatar
 
-jekyll-mentions:
-  base_url: https://github.com
-
-destination: ./public
 markdown: kramdown
 highlighter: rouge
 
-collections_dir: labs
-collections:
-  pp-java:
-    directory: /labs/_pp-java/
-    output: true
-    permalink: /:collection/:name
-    order:
-      - struktur-dasar.md
-      - io.md
-      - tipe-data.md
-      - operasi.md
-      - penyeleksian.md
-      - perulangan.md
-      - jump-statement.md
-      - array.md
-      - method.md
-      - string.md
-      - exceptions.md
-      - file-io.md
-  pbo-java:
-    directory: /labs/_pbo-java/
-    output: true
-    permalink: /:collection/:name
-    order:
-      - class-dan-object.md
-      - method.md
-      - constructor.md
-      - inheritance.md
-      - abstract-class-dan-interface.md
-      - polymorphism.md
-  pp-python:
-    directory: /labs/_pp-python/
-    output: true
-    permalink: /:collection/:name
-    order:
-      - PEP-8.md
-      - Bab-1.md
-      - Bab-2.md
-      - Bab-3.md
-      - Bab-4.md
-      - Bab-5.md
-      - Bab-6.md
-      - Bab-7.md
-
 exclude: ['README.md', '*/README.md']
+
+sass:
+  style: compressed
