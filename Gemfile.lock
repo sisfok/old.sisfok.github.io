@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/asciidoctor/jekyll-asciidoc.git
+  revision: a1ad4d6c9d387b7ef6cff1a9ba56c273ee8c1ff3
+  specs:
+    jekyll-asciidoc (3.0.1.dev)
+      asciidoctor (~> 2.0)
+      jekyll (>= 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -41,9 +49,6 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-asciidoc (3.0.0)
-      asciidoctor (>= 1.5.0)
-      jekyll (>= 3.0.0)
     jekyll-avatar (0.8.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-feed (0.17.0)
@@ -71,7 +76,7 @@ GEM
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (5.0.1)
+    public_suffix (5.0.3)
     racc (1.7.1)
     rake (13.0.6)
     rb-fsevent (0.11.2)
@@ -96,7 +101,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-asciidoc
+  jekyll-asciidoc!
   jekyll-avatar
   jekyll-feed
   jekyll-mentions

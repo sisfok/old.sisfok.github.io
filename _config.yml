@@ -1,20 +1,30 @@
 title: sisfok
 email: deo@duck.com
 description: Rho Chi
-baseurl: ""
 url: "https://sisfok.github.io/"
-github_username: sisfok
+permalink: /:year/:month/:title:output_ext
 
 plugins:
-  - jekyll-feed
   - jekyll-asciidoc
-  - jekyll-mentions
-  - jekyll-avatar
+  - jekyll-feed
+
+asciidoctor:
+  attributes:
+    - icons=font
+    - source-highlighter=rouge
+    - sectanchors=_
+    - experimental=_
+    - rouge-style=github
+    - stylesdir=css
 
 markdown: kramdown
 highlighter: rouge
-
-exclude: ['README.md', '*/README.md']
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: 'rouge'
 
 sass:
   style: compressed

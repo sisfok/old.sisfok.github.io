@@ -2,24 +2,25 @@
 <section>
 
   {% if page.home %}
-  <h2>Tulisan Terbaru</h2>
-  <ul>
+  <h2>tutorial</h2>
+  <ol>
     {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
       <time>{{ post.time | date: "%d-%m-%Y" }}</time>
     </li>{% endfor %}
-  </ul>
+  </ol>
   {% endif %}
 
   <h2>{{ page.title }}</h1>
-    {% if page.author %}
+  {% if page.author %}
     <p id="signed">Author: {{ page.author }}</p>
-    {% endif %}
-    {{ content }}
+  {% endif %}
+  
+  {{ content }}
 
-    <hr>
-    {%- include footer.html -%}
+  <hr>
+  {%- include footer.html -%}
 </section>
 </main>
 </body>
