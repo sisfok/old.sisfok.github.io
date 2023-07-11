@@ -2,6 +2,7 @@
 :page-layout: default
 :page-signed-by: Deo <valiandrod@gmail.com>, BobChrismansyah <bob@ilkom.my.id>
 
+:toc:
 
 Python adalah bahasa pemrograman *high-level* yang mudah dipelajari tetapi
 merupakan bahasa yang poweful. Dalam tulisan ini, kami akan menggunakan
@@ -23,7 +24,7 @@ Contoh yang baik:
 ----
 price = 12000
 age = 12
-address = "Makassar"
+new_address = "Makassar"
 ----
 
 == tipe data
@@ -67,3 +68,149 @@ List adalah array dalam Python. List tidak harus memiliki tipe data yang sama.
 
 [source, python]
 data = [1, 2.2, "name"]
+
+=== tuple
+
+Mirip dengan list kecuali datanya tidak bisa diubah.
+
+[source, python]
+student_identity = ("Deo", 25, 165)
+
+== Konversi data
+
+Python bersifat duck typing language.
+
+== Input
+
+Menggunakan fungsi `input()`. Misalnya:
+
+[source, python]
+----
+name = input("Input name : ")
+----
+
+== Operator
+
+. Arithmetic Operators
++
+Operator aritmatik digunakan untuk menjalankan operasi matematika seperti
+penjumlahan, pengurangan, perkalian, dll.
++
+[%autowidth]
+|===
+| Operator | Arti | Contoh
+
+| +        | Menjumlahkan dua operand atau unary plus
+| x + y
+| -        | Mengurangi operand kanan dari kiri atau unary minus
+| x - y
+| *        | Mengalikan operand kiri dengan kanan
+| x * y
+| /        | Membagikan operand kiri dengan kanan (akan menghasilkan float)
+| x / y
+| %        | Modulus – hasil bagi dari operand kiri dengan kanan
+| x % y
+| //       | Floor Division – pembagian yang hasilnya menjadi bilangan bulat
+disesuaikan ke kiri pada garis bilangan | x // y
+| **       | Pangkat – operand kiri dipangkatkan oleh operand kanan
+| x ** y
+|===
+
+. Comparison (Relational) Operators
++
+Operator komparasi digunakan untuk membandingkan value dan akan mengembalikan
+nilai True atau False berdasarkan kondisinya.
++
+[%autowidth]
+|===
+| Operator | Arti                                                       | Contoh
+
+| >        | Lebih besar dari – True jika operand kiri lebih besar dari kanan
+| x > y
+| <        | Kurang dari – True jika operand kiri lebih kecil dari kanan
+| x < y
+| ==       | Sama dengan – True jika kedua operand bernilai sama
+| x == y
+| !=       | Tidak sama dengan – True jika kedua operand tidak bernilai sama
+| x != y
+| >=       | Lebih besar atau sama dengan – True jika operand kiri lebih besar
+atau sama dengan kanan | x >= y
+| <=       | Lebih kecil atau sama dengan – True jika operand kiri lebih kecil
+atau sama dengan kanan | x <= y
+|===
+
+. Logical (Boolean) Operators
++
+[%autowidth]
+|===
+| Operator | Arti                                                  | Contoh
+
+| and      | True jika kedua operand bernilai True                 | x and y
+| or       | True jika kedua atau salah satu operand bernilai True | x or y
+| not      | True jika operand bernilai False                      | not x
+|===
+
+. Bitwise Operators
++
+Operator bitwise bertindak pada operand seolah-olah mereka adalah string
+digit binary.
++
+Pada tabel di bawah : misalkan x = 10 (0000 1010) dan y = 4 (0000 0100)
++
+[%autowidth]
+|===
+| Operator | Arti                | Contoh
+
+| &        | Bitwise AND         | x & y = 0 (0000 0000)
+| \|       | Bitwise OR          | x \| y = 14 (0000 1110)
+| ~        | Bitwise NOT         | ~x = -11 (1111 0101)
+| ^        | Bitwise XOR         | x ^ y = 14 (0000 1110)
+| >>       | Bitwise right shift | x >> 2 = 2 (0000 0010)
+| <<       | Bitwise left shift  | x << 2 = 40 (0010 1000)
+|===
+
+. Assignment Operators
++
+Operator assignment digunakan dalam Python untuk menetapkan nilai ke
+variable.
++
+[%autowidth]
+|===
+| Operator | Arti
+
+| =        | x = 5
+| +=       | x += 5
+| -=       | x -= 5
+| *=       | x *= 5
+| /=       | x /= 5
+| %=       | x %= 5
+| //=      | x //= 5
+| **=      | x **= 5
+| &=       | x &= 5
+| \|=      | x \|= 5
+| ^=       | x ^= 5
+| >>=      | x >>= 5
+| <<=      | x <<= 5
+|===
+
+. Identity Operator
++
+[%autowidth]
+|===
+| Operator | Arti                            | Contoh
+
+| is       | True jika kedua operand identik | x is True
+| is not   | True jika operand tidak identik | x is not True
+|===
+
+. Membership Operator
++
+[%autowidth]
+|===
+| Operator | Arti                                           | Contoh
+
+| in | True jika value/variable ditemukan dalam collections | x in True
+| not in | True jika value/variable tidak ditemukan dalam collection 
+| x not in True
+|===
+
