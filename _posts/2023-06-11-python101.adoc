@@ -2,7 +2,6 @@
 :page-layout: default
 :page-signed-by: Deo &lt;valiandrod@gmail.com&gt;
 
-
 Python adalah bahasa pemrograman *high-level* yang mudah dipelajari tetapi
 merupakan bahasa yang poweful. Dalam tulisan ini, kami akan menggunakan
 Python 3.11.

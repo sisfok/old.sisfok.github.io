@@ -6,7 +6,8 @@
   <ol>
     {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">
+        {{ post.title }}</a>
       <time>{{ post.time | date: "%d-%m-%Y" }}</time>
     </li>{% endfor %}
   </ol>
