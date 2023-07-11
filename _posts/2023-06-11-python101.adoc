@@ -1,6 +1,7 @@
 :page-title: Python101
 :page-layout: default
-:page-signed-by: Deo &lt;valiandrod@gmail.com&gt;
+:page-signed-by: Deo <valiandrod@gmail.com>, BobChrismansyah <bob@ilkom.my.id>
+
 
 Python adalah bahasa pemrograman *high-level* yang mudah dipelajari tetapi
 merupakan bahasa yang poweful. Dalam tulisan ini, kami akan menggunakan
