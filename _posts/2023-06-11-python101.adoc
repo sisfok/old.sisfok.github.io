@@ -1,10 +1,11 @@
 :page-title: Python101
 :page-layout: default
 :page-signed-by: Deo <valiandrod@gmail.com>, BobChrismansyah <bob@ilkom.my.id>
+:page-math: true
 
 :toc:
 
-Python adalah bahasa pemrograman *high-level* yang mudah dipelajari tetapi
+Python adalah bahasa pemrograman *high-level* yang mudah dipelajari dan
 merupakan bahasa yang poweful. Dalam tulisan ini, kami akan menggunakan
 Python 3.11.
 
@@ -51,13 +52,12 @@ Menghasilkan:
 
 === string
 
-String adalah array byte, sehingga char adalah string dgn panjang 1.
-Karena array, maka segala jenis operasi array dapat digunakan.
+String pada dasarnya adalah list sehingga char adalah string dgn panjang 1.
+Karena merupakan list, maka segala jenis operasi array dapat digunakan.
 
 [source, python]
 ----
 name = "Deo Valiandro"
-
 print(name[1])
 print(name[:3])
 ----
@@ -94,61 +94,45 @@ name = input("Input name : ")
 . Arithmetic Operators
 +
 Operator aritmatik digunakan untuk menjalankan operasi matematika seperti
-penjumlahan, pengurangan, perkalian, dll.
+`+`, `-`, `\*`, `/`, `%`, `/` dan `**`.
 +
-[%autowidth]
-|===
-| Operator | Arti | Contoh
+[source, python]
+----
+# penjumlahan
+result = 1 + 2
 
-| +        | Menjumlahkan dua operand atau unary plus
-| x + y
-| -        | Mengurangi operand kanan dari kiri atau unary minus
-| x - y
-| *        | Mengalikan operand kiri dengan kanan
-| x * y
-| /        | Membagikan operand kiri dengan kanan (akan menghasilkan float)
-| x / y
-| %        | Modulus – hasil bagi dari operand kiri dengan kanan
-| x % y
-| //       | Floor Division – pembagian yang hasilnya menjadi bilangan bulat
-disesuaikan ke kiri pada garis bilangan | x // y
-| **       | Pangkat – operand kiri dipangkatkan oleh operand kanan
-| x ** y
-|===
+# modulus
+result = 10 % 3
+
+# floor division
+result = 10 // 3
+
+# pangkat
+result = 2 ** 2
+
+# akar
+math.sqrt(4)
+----
 
 . Comparison (Relational) Operators
 +
 Operator komparasi digunakan untuk membandingkan value dan akan mengembalikan
-nilai True atau False berdasarkan kondisinya.
+nilai True atau False berdasarkan kondisinya. Operatornya adalah `>`, `<`, `>=`,
+`<=`, `==` dan `!=`.
 +
-[%autowidth]
-|===
-| Operator | Arti                                                       | Contoh
-
-| >        | Lebih besar dari – True jika operand kiri lebih besar dari kanan
-| x > y
-| <        | Kurang dari – True jika operand kiri lebih kecil dari kanan
-| x < y
-| ==       | Sama dengan – True jika kedua operand bernilai sama
-| x == y
-| !=       | Tidak sama dengan – True jika kedua operand tidak bernilai sama
-| x != y
-| >=       | Lebih besar atau sama dengan – True jika operand kiri lebih besar
-atau sama dengan kanan | x >= y
-| <=       | Lebih kecil atau sama dengan – True jika operand kiri lebih kecil
-atau sama dengan kanan | x <= y
-|===
+[source, pyton]
+----
+print(12 > 5)
+----
 
 . Logical (Boolean) Operators
 +
-[%autowidth]
-|===
-| Operator | Arti                                                  | Contoh
-
-| and      | True jika kedua operand bernilai True                 | x and y
-| or       | True jika kedua atau salah satu operand bernilai True | x or y
-| not      | True jika operand bernilai False                      | not x
-|===
+Memuat operator logika `and`, `or` dan `not`.
++
+[source, python]
+----
+print(true and true)
+----
 
 . Bitwise Operators
 +

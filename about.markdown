@@ -3,12 +3,8 @@ layout: default
 title: about
 ---
 
-Komunitas kecil ditengah dunia yang besar. Perhatikan beberapa poin:
+Komunitas kecil ditengah dunia yang besar.
 
-- Hormati privasi orang lain.
-- Pikirkan sebelum Anda mengetik.
-- Dengan kekuatan besar datang tanggung jawab besar.
-
-Website ini dibuat oleh programmer yang memprioritaskan kecepatan, distraksi
-sekecil mungkin dan mengutamakan penyampaian informasi sehingga kurang
-memprioritaskan estektik. Harap maklum!
+1. website ini dibuat dengan menggunakan [jekyll](https://jekyll.com),
+2. style menggunakan scss yang dibuat oleh [Deo](https://deo.ilkom.my.id),
+3. menggunakan github page.
